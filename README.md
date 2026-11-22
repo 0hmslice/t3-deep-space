@@ -24,10 +24,13 @@ It's all CSS and SVG, with no JavaScript, and it stays behind a readability veil
 
 You need **T3 Code Nightly from 2026-11-21 or later**. Older builds have a smaller theme size limit.
 
-**macOS and Linux, one line:**
+**macOS and Linux:**
 
 ```sh
-mkdir -p ~/.t3/userdata/themes && for f in json webp; do curl -fsSL -o ~/.t3/userdata/themes/deep-space.$f https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/themes/deep-space.$f; done
+mkdir -p ~/.t3/userdata/themes && cd ~/.t3/userdata/themes
+for f in json webp; do
+  curl -fsSLO https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/themes/deep-space.$f
+done
 ```
 
 Then pick **Deep Space** in T3 Code's theme settings. If it was already selected, switch to another theme and back to load the new version.
@@ -71,11 +74,17 @@ Every visitor runs on its own **prime-length cycle**, from 151 to 839 seconds. T
 | A sperm whale and a bowl of petunias | 4 min 35 s | 13 min 7 s |
 | Klingon Bird-of-Prey, decloaking on arrival | 5 min 10 s | 13 min 59 s |
 
-One X-wing pass in three ends with a hit, starting with the first one.
+<div align="center">
 
-<img src="docs/xwing-chase.webp" alt="A TIE fighter chases an X-wing across the sky and lands a hit" width="100%">
+<img src="docs/xwing-chase.webp" alt="A TIE fighter chases an X-wing, with R2-D2 behind the cockpit, and lands a hit" width="100%">
+
+<sub><b>The chase.</b> One X-wing pass in three ends with a hit, starting with the first one.</sub>
 
 <img src="docs/falcon.webp" alt="The Millennium Falcon crossing the sky past Jupiter and Saturn" width="100%">
+
+<sub><b>The fastest hunk of junk in the galaxy</b>, crossing every 10 minutes.</sub>
+
+</div>
 
 ## The app
 
