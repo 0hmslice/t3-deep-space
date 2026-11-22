@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 84' preserveAspectRatio='xMidYMin slice' fill='#e9d5ff'>
+<style>@keyframes a{from{opacity:var(--o,.2)}to{opacity:1}}path,circle{animation:a var(--d) linear infinite alternate}path{--o:.15}circle{r:.9px}</style>
+<g fill='#fff'>
+<path d='M121.7 13.4l.5 2.1 2.1.4-2.1.5-.5 2.1-.4-2.1-2.1-.5 2.1-.4z' style='--d:2.7s 1.8s'/>
+<path d='M279.4 34.1l.4 2.8 2.7.4-2.7.5-.4 2.7-.5-2.7-2.7-.5 2.7-.4z' fill='#7dd3fc' style='--d:1.9s .5s'/>
+<path d='M278.1 30.5l.4 2.5 2.5.5-2.5.4-.4 2.5-.5-2.5-2.5-.4 2.5-.5z' style='--d:1.35s 2.2s'/>
+<path d='M188.7 34.9l.5 2.5 2.6.5-2.6.4-.5 2.6-.4-2.6-2.6-.4 2.6-.5z' fill='#bae6fd' style='--d:2.4s 3s'/>
+</g>
+<circle cx='22' cy='6' style='--d:1.35s .4s'/>
+<circle cx='182' cy='9' style='--d:1.45s 1.5s'/>
+<circle cx='140' cy='31' style='--d:1.25s .4s'/>
+<circle cx='218' cy='30' fill='#bae6fd' style='--d:2.25s 2.1s'/>
+<circle cx='92' cy='39' style='--d:1.25s 3.4s'/>
+<circle cx='265' cy='24' style='--d:1.45s 2.2s'/>
+<circle cx='240' cy='44' style='--d:1.45s 2.1s'/>
+</svg>

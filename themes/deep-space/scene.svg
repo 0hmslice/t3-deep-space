@@ -1,0 +1,287 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 1000' preserveAspectRatio='xMidYMid slice'>
+<defs>
+<radialGradient id='hpj' fx='.4' fy='.4'><stop offset='.66' stop-color='#fbbf7447'/><stop offset='1' stop-color='#fbbf7400'/></radialGradient>
+<radialGradient id='hpt' fx='.4' fy='.4'><stop offset='.66' stop-color='#60a5fa47'/><stop offset='1' stop-color='#60a5fa00'/></radialGradient>
+<radialGradient id='hpl' fx='.4' fy='.4'><stop offset='.66' stop-color='#fb923c47'/><stop offset='1' stop-color='#fb923c00'/></radialGradient>
+<radialGradient id='hpn' fx='.4' fy='.4'><stop offset='.66' stop-color='#67e8f947'/><stop offset='1' stop-color='#67e8f900'/></radialGradient>
+<radialGradient id='hpv' fx='.4' fy='.4'><stop offset='.66' stop-color='#fde68a47'/><stop offset='1' stop-color='#fde68a00'/></radialGradient>
+<radialGradient id='hg' fx='.4' fy='.4'><stop offset='.7' stop-color='#a78bfa4c'/><stop offset='1' stop-color='#a78bfa00'/></radialGradient>
+<radialGradient id='hi' fx='.4' fy='.4'><stop offset='.64' stop-color='#38bdf866'/><stop offset='1' stop-color='#38bdf800'/></radialGradient>
+<radialGradient id='hr' fx='.4' fy='.4'><stop offset='.7' stop-color='#fb718540'/><stop offset='1' stop-color='#fb718500'/></radialGradient>
+<radialGradient id='hs'><stop stop-color='#c4b5fd29'/><stop offset='1' stop-color='#c4b5fd00'/></radialGradient>
+<radialGradient id='halo'><stop stop-color='#fff' stop-opacity='.9'/><stop offset='.15' stop-color='#e0f2fe59'/><stop offset='1' stop-color='#e0f2fe00'/></radialGradient>
+<g id='sp'>
+<circle r='9' fill='url(#halo)'/>
+<ellipse rx='11' ry='.45' fill='#fff' opacity='.55'/>
+<ellipse rx='.45' ry='11' fill='#fff' opacity='.55'/>
+<circle r='1.3' fill='#fff'/>
+</g>
+<!-- spinning planets: a wrapping surface scrolls under a fixed shading layer; #warp bends it onto a sphere (radius 50) -->
+<clipPath id='disc'><circle r='50'/></clipPath>
+<filter id='warp' filterUnits='userSpaceOnUse' x='-80' y='-80' width='160' height='160' color-interpolation-filters='sRGB'>
+<feImage href='tex:dmap' x='-50' y='-50' width='100' height='100' preserveAspectRatio='none' result='m'/>
+<feDisplacementMap in='SourceGraphic' in2='m' scale='120' xChannelSelector='R' yChannelSelector='G'/>
+</filter>
+<image id='shade' href='tex:shade' x='-50' y='-50' width='100' height='100'/>
+<style>pattern image{x:-1px;width:316.16px;height:157.08px}</style>
+<pattern id='P' patternUnits='userSpaceOnUse' width='314.16' height='157.08' y='-78.54'/>
+<spin id='ptS' dur='26'/>
+<spin id='ptC' dur='20'/>
+<spin id='pjS' dur='18'/>
+<spin id='plS' dur='30'/>
+<spin id='plE' dur='30'/>
+<spin id='ggS' dur='32'/>
+<radialGradient id='rgg'><stop offset='.8' stop-color='#c4b5fd00'/><stop offset='1' stop-color='#c4b5fd80'/></radialGradient>
+<spin id='pvS' dur='50' rev/>
+<radialGradient id='rpj'><stop offset='.8' stop-color='#fde3b000'/><stop offset='1' stop-color='#fde3b066'/></radialGradient>
+<radialGradient id='rpt'><stop offset='.78' stop-color='#7cc4ff00'/><stop offset='1' stop-color='#7cc4ffaa'/></radialGradient>
+<radialGradient id='rpv'><stop offset='.8' stop-color='#fff1c700'/><stop offset='1' stop-color='#fff1c780'/></radialGradient>
+<spin id='iwS' dur='40'/>
+<spin id='rpS' dur='36'/>
+<spin id='saS' dur='26'/>
+<spin id='neS' dur='30'/>
+<spin id='pnS' dur='34' rev/>
+<spin id='meS' dur='80'/>
+<spin id='puS' dur='60' rev/>
+<radialGradient id='riw'><stop offset='.78' stop-color='#7dd3fc00'/><stop offset='1' stop-color='#7dd3fc99'/></radialGradient>
+<radialGradient id='rrp'><stop offset='.8' stop-color='#fda4af00'/><stop offset='1' stop-color='#fda4af66'/></radialGradient>
+<radialGradient id='rsa'><stop offset='.8' stop-color='#fde9c000'/><stop offset='1' stop-color='#fde9c066'/></radialGradient>
+<radialGradient id='rne'><stop offset='.78' stop-color='#8fb4ff00'/><stop offset='1' stop-color='#8fb4ff88'/></radialGradient>
+<radialGradient id='rpn'><stop offset='.8' stop-color='#a5f3fc00'/><stop offset='1' stop-color='#a5f3fc80'/></radialGradient>
+<radialGradient id='hsa' fx='.4' fy='.4'><stop offset='.66' stop-color='#fcd9a03a'/><stop offset='1' stop-color='#fcd9a000'/></radialGradient>
+<radialGradient id='hne' fx='.4' fy='.4'><stop offset='.66' stop-color='#6f9cff47'/><stop offset='1' stop-color='#6f9cff00'/></radialGradient>
+<radialGradient id='hme' fx='.4' fy='.4'><stop offset='.66' stop-color='#d6cfc41f'/><stop offset='1' stop-color='#d6cfc400'/></radialGradient>
+<radialGradient id='hpu' fx='.4' fy='.4'><stop offset='.66' stop-color='#e8d2b01f'/><stop offset='1' stop-color='#e8d2b000'/></radialGradient>
+<!-- one spinner template: surface (--f), optional clouds (--c) and rim (--r), axis tilt (--t) -->
+<g id='sph'>
+<g clip-path='url(#disc)'>
+<g filter='url(#warp)' style='transform:var(--t)'>
+<rect x='-80' y='-80' width='160' height='160' style='fill:var(--f)'/>
+<rect x='-80' y='-80' width='160' height='160' style='fill:var(--c,none);mix-blend-mode:screen'/>
+</g>
+<circle r='50' style='fill:var(--r,none)'/>
+<use href='#shade'/>
+</g>
+</g>
+<!-- the same without the sphere warp, for planets under ~20px where the warp can't be seen (saves a filter pass each) -->
+<g id='sphf'>
+<g clip-path='url(#disc)'>
+<rect x='-80' y='-80' width='160' height='160' style='fill:var(--f);transform:var(--t)'/>
+<circle r='50' style='fill:var(--r,none)'/>
+<use href='#shade'/>
+</g>
+</g>
+<!-- moons: lit from the upper left like everything else -->
+<radialGradient id='mo' fx='.3' fy='.3'><stop stop-color='#f5f5f4'/><stop offset='.7' stop-color='#a8a29e'/><stop offset='1' stop-color='#44403c'/></radialGradient>
+<image id='mnI' href='tex:mn' x='-9.09' y='-9.09' width='18.18' height='18.18' style='clip-path:circle()'/>
+<!-- ship materials, lit from the upper left like the planets -->
+<linearGradient id='vPanel' x2='1' y2='1'><stop stop-color='#1e3a8a'/><stop offset='.45' stop-color='#3b82f6'/><stop offset='.55' stop-color='#1d4ed8'/><stop offset='1' stop-color='#0b1a45'/></linearGradient>
+<linearGradient id='vGold' x2='1' y2='1'><stop stop-color='#fde68a'/><stop offset='.4' stop-color='#d4a03a'/><stop offset='1' stop-color='#6b3f0f'/></linearGradient>
+<linearGradient id='vHull' x2='0' y2='1'><stop stop-color='#fff'/><stop offset='.45' stop-color='#dbe3ee'/><stop offset='1' stop-color='#7c8899'/></linearGradient>
+<linearGradient id='vWing' x2='0' y2='1'><stop stop-color='#a7b2c2'/><stop offset='1' stop-color='#4b5563'/></linearGradient>
+<radialGradient id='vBall' fx='.32' fy='.3'><stop stop-color='#fff'/><stop offset='.6' stop-color='#b8c2d0'/><stop offset='1' stop-color='#475263'/></radialGradient>
+<linearGradient id='vRed' x2='0' y2='1'><stop stop-color='#f87171'/><stop offset='.45' stop-color='#dc2626'/><stop offset='1' stop-color='#7f1d1d'/></linearGradient>
+<linearGradient id='vFlame' x1='1' x2='0'><stop stop-color='#fff7ed'/><stop offset='.25' stop-color='#fdba74'/><stop offset='.7' stop-color='#f97316' stop-opacity='.55'/><stop offset='1' stop-color='#f97316' stop-opacity='0'/></linearGradient>
+<!-- far layers: a slowly morphing nebula (two mirrored copies drifting apart and cross-fading) and a sparse
+     star field drifting over the static sky for parallax -->
+<image id='nb' href='tex:neb' x='-120' y='-80' width='1700' height='1060' preserveAspectRatio='none'/>
+<pattern id='dst' width='260' height='260' patternUnits='userSpaceOnUse' stroke='#fff' stroke-linecap='round'>
+<path stroke-width='1.6' opacity='.55' d='M31 47h0M190 112h0M97 201h0'/>
+<path stroke='#cfe3ff' stroke-width='2.2' opacity='.45' d='M141 23h0M228 238h0'/>
+<path stroke-width='1' opacity='.4' d='M64 150h0M210 61h0M12 230h0M160 180h0'/>
+<animateTransform attributeName='patternTransform' type='translate' from='0 0' to='-260 130' dur='420' repeatDur='indefinite'/>
+</pattern>
+</defs>
+<g opacity='.85'>
+<use href='#nb'><animateTransform attributeName='transform' type='translate' values='0 0;60 -25;0 0' dur='160' repeatDur='indefinite'/></use>
+<use href='#nb' transform='translate(1560 0) scale(-1 1)' opacity='.5'><animateTransform attributeName='transform' type='translate' values='0 0;-50 30;0 0' dur='130' repeatDur='indefinite' additive='sum'/><animate attributeName='opacity' values='.15;.6;.15' dur='70' repeatDur='indefinite'/></use>
+</g>
+<rect x='-200' y='-200' width='2000' height='1400' fill='url(#dst)'/>
+<use href='#sp' transform='translate(230 140)'><animate attributeName='opacity' values='.35;.95;.35' dur='5.5' repeatDur='indefinite'/></use>
+<use href='#sp' transform='translate(1180 90) scale(.8)'><animate attributeName='opacity' values='.35;.95;.35' dur='7' begin='-2' repeatDur='indefinite'/></use>
+<use href='#sp' transform='translate(1460 640) scale(.9)'><animate attributeName='opacity' values='.35;.95;.35' dur='6' begin='-3.5' repeatDur='indefinite'/></use>
+<use href='#sp' transform='translate(520 760) scale(.7)'><animate attributeName='opacity' values='.35;.95;.35' dur='8' begin='-1' repeatDur='indefinite'/></use>
+<use href='#sp' transform='translate(980 410) scale(.6)'><animate attributeName='opacity' values='.35;.95;.35' dur='6.5' begin='-4.2' repeatDur='indefinite'/></use>
+<use href='#sp' transform='translate(90 520) scale(.7)'><animate attributeName='opacity' values='.35;.95;.35' dur='7.5' begin='-2.6' repeatDur='indefinite'/></use>
+<g>
+<animateMotion path='M1900 160L-300 230' dur='1000' begin='-300' repeatDur='indefinite'/>
+<g transform='rotate(10)'>
+<image href='tex:fg' x='-95' y='-12.09' width='190' height='24.18' opacity='.9'/>
+<ellipse rx='16' ry='5' fill='url(#halo)' opacity='.5'><animate attributeName='opacity' values='.25;.6;.25' dur='9' repeatDur='indefinite'/></ellipse>
+</g>
+</g>
+<g opacity='.92'>
+<animateMotion path='M-500 820L2100 560' dur='900' begin='-170' repeatDur='indefinite'/>
+<ellipse rx='120' ry='52' transform='rotate(-28)' fill='url(#hs)'/>
+<g transform='rotate(-28) scale(1 .42)'>
+<animateTransform attributeName='transform' type='rotate' from='0' to='-360' dur='300' repeatDur='indefinite' additive='sum'/>
+<image href='tex:sg' x='-130' y='-130' width='260' height='260'/>
+</g>
+</g>
+<g>
+<animateMotion path='M-200 120L1800 300' dur='640' begin='-150' repeatDur='indefinite'/>
+<circle r='39' fill='url(#hpj)'/>
+<g id='m1' transform='rotate(-14)'>
+<circle r='2.6' fill='url(#mo)'><animateMotion path='M40 0A40 8 0 1 1 -40 0A40 8 0 1 1 40 0' dur='34' repeatDur='indefinite'/></circle>
+</g>
+<g id='m2' transform='rotate(-8)'>
+<circle r='1.8' fill='url(#mo)'><animateMotion path='M52 0A52 11 0 1 1 -52 0A52 11 0 1 1 52 0' dur='61' begin='-20' repeatDur='indefinite'/></circle>
+</g>
+<use href='#sph' transform='scale(.52)' style='--f:url(#pjS);--r:url(#rpj);--t:rotate(-12deg)'/>
+<use href='#m1'><animate attributeName='opacity' values='1;0' keyTimes='0;.5' calcMode='discrete' dur='34' repeatDur='indefinite'/></use>
+<use href='#m2'><animate attributeName='opacity' values='1;0' keyTimes='0;.5' calcMode='discrete' dur='61' begin='-20' repeatDur='indefinite'/></use>
+</g>
+<g>
+<animateMotion path='M1800 600L-200 420' dur='420' begin='-90' repeatDur='indefinite'/>
+<circle r='19.5' fill='url(#hpt)'/>
+<g id='m3' transform='rotate(-20)'>
+<circle r='2' fill='url(#mo)'><animateMotion path='M24 0A24 5 0 1 1 -24 0A24 5 0 1 1 24 0' dur='26' repeatDur='indefinite'/></circle>
+</g>
+<use href='#sph' transform='scale(.26)' style='--f:url(#ptS);--c:url(#ptC);--r:url(#rpt);--t:rotate(-23deg)'/>
+<use href='#m3'><animate attributeName='opacity' values='1;0' keyTimes='0;.5' calcMode='discrete' dur='26' repeatDur='indefinite'/></use>
+</g>
+<g>
+<animateMotion path='M300 1100L1300 -100' dur='360' begin='-200' repeatDur='indefinite'/>
+<circle r='18' fill='url(#hpl)'/>
+<g transform='scale(.24)' clip-path='url(#disc)'>
+<use href='#sphf' style='--f:url(#plS);--t:rotate(-8deg)'/>
+<rect x='-80' y='-80' width='160' height='160' fill='url(#plE)' transform='rotate(-8)'/>
+</g>
+</g>
+<g>
+<animateMotion path='M1800 900L-200 700' dur='560' begin='-330' repeatDur='indefinite'/>
+<circle r='22.5' fill='url(#hpn)'/>
+<path d='M-27 0A27 5 0 0 1 27 0' transform='rotate(70)' fill='none' stroke='#cffafe' stroke-opacity='.35' stroke-width='1.3'/>
+<use href='#sph' transform='scale(.3)' style='--f:url(#pnS);--r:url(#rpn);--t:rotate(70deg)'/>
+<path d='M-27 0A27 5 0 0 0 27 0' transform='rotate(70)' fill='none' stroke='#cffafe' stroke-opacity='.45' stroke-width='1.3'/>
+</g>
+<g>
+<animateMotion path='M-150 600L1750 760' dur='480' begin='-330' repeatDur='indefinite'/>
+<circle r='15' fill='url(#hpv)'/>
+<use href='#sphf' transform='scale(.2)' style='--f:url(#pvS);--r:url(#rpv);--t:rotate(-4deg)'/>
+</g>
+<g>
+<animateMotion path='M1750 760L-150 880' dur='520' begin='-60' repeatDur='indefinite'/>
+<circle r='14.5' fill='url(#hr)'/>
+<use href='#sphf' transform='scale(.2)' style='--f:url(#rpS);--r:url(#rrp);--t:rotate(-8deg)'/>
+</g>
+<g>
+<animateMotion path='M-100 330L1700 140' dur='380' begin='-250' repeatDur='indefinite'/>
+<g id='m4' transform='rotate(-18)'>
+<use href='#mnI' transform='scale(.8)'><animateMotion path='M38 0A38 9 0 1 1 -38 0A38 9 0 1 1 38 0' dur='50' begin='-12' repeatDur='indefinite'/></use>
+</g>
+<circle r='27' fill='url(#hi)'/>
+<use href='#sph' transform='scale(.346)' style='--f:url(#iwS);--r:url(#riw);--t:rotate(12deg)'/>
+<use href='#m4'><animate attributeName='opacity' values='1;0' keyTimes='0;.5' calcMode='discrete' dur='50' begin='-12' repeatDur='indefinite'/></use>
+</g>
+<g>
+<animateMotion path='M1900 220L-300 520' dur='300' begin='-110' repeatDur='indefinite'/>
+<circle r='63' fill='url(#hg)'/>
+<image href='tex:ggB' x='-105.4' y='-25.7' width='210.8' height='26.6' transform='rotate(-18)'/>
+<use href='#sph' transform='scale(.898)' style='--f:url(#ggS);--r:url(#rgg);--t:rotate(-18deg)'/>
+<image href='tex:ggF' x='-105.4' y='-.9' width='210.8' height='26.6' transform='rotate(-18)'/>
+</g>
+<g>
+<animateMotion path='M1750 130L-250 280' dur='560' begin='-140' repeatDur='indefinite'/>
+<circle r='52' fill='url(#hsa)'/>
+<image href='tex:saB' x='-75.3' y='-25.4' width='150.5' height='26.2' transform='rotate(12)'/>
+<use href='#sph' transform='scale(.654)' style='--f:url(#saS);--r:url(#rsa);--t:rotate(12deg)'/>
+<image href='tex:saF' x='-75.3' y='-.8' width='150.5' height='34.4' transform='rotate(12)'/>
+</g>
+<g>
+<animateMotion path='M-150 870L1750 610' dur='620' begin='-400' repeatDur='indefinite'/>
+<circle r='21' fill='url(#hne)'/>
+<use href='#sph' transform='scale(.28)' style='--f:url(#neS);--r:url(#rne);--t:rotate(-6deg)'/>
+</g>
+<g>
+<animateMotion path='M1700 470L-100 560' dur='240' begin='-30' repeatDur='indefinite'/>
+<circle r='9' fill='url(#hme)'/>
+<use href='#sphf' transform='scale(.12)' style='--f:url(#meS);--t:rotate(-2deg)'/>
+</g>
+<g>
+<animateMotion path='M-100 180L1700 90' dur='760' begin='-560' repeatDur='indefinite'/>
+<circle r='7' fill='url(#hpu)'/>
+<use href='#sphf' transform='scale(.1)' style='--f:url(#puS);--t:rotate(-14deg)'/>
+</g>
+<!-- visitors: long cycles with staggered starts; after a load each first appears at about
+     satellite 0s (already crossing), station 20s, shuttle 35s, roadster 60s -->
+<g>
+<animateMotion path='M1700 250C1150 300 500 190 -100 320' dur='199' begin='-39' keyPoints='0;1;1' keyTimes='0;.45;1' calcMode='linear' repeatDur='indefinite'/>
+<g transform='scale(1.8)'>
+<animateTransform attributeName='transform' type='rotate' values='-9;9;-9' dur='38' repeatDur='indefinite' additive='sum'/>
+<path d='M-5.2-.35H5.2v.7H-5.2z' fill='#9aa5b4'/>
+<rect x='-16' y='-3.4' width='11' height='6.8' rx='.4' fill='url(#vPanel)' stroke='#cbd5e1' stroke-width='.35'/>
+<rect x='5' y='-3.4' width='11' height='6.8' rx='.4' fill='url(#vPanel)' stroke='#cbd5e1' stroke-width='.35'/>
+<path d='M-13.25-3.4v6.8M-10.5-3.4v6.8M-7.75-3.4v6.8M7.75-3.4v6.8M10.5-3.4v6.8M13.25-3.4v6.8M-16 0h11M5 0h11' stroke='#0b1a45' stroke-width='.3' opacity='.8'/>
+<path d='M-15.5-3h4l-5 5.5z' fill='#fff' opacity='.12'/>
+<rect x='-3.4' y='-4.4' width='6.8' height='8.8' rx='1' fill='url(#vGold)'/>
+<path d='M-3.4-1.3h6.8M-3.4 1.6h6.8M0-4.4v8.8' stroke='#7c4a12' stroke-width='.25' opacity='.5'/>
+<rect x='-3' y='-4' width='2.6' height='2.4' rx='.5' fill='#fff' opacity='.35'/>
+<path d='M0-4.4v-2' stroke='#cbd5e1' stroke-width='.5'/>
+<ellipse cy='-7.2' rx='2.6' ry='1.1' fill='url(#vBall)'/>
+<path d='M0-7.2v-1.4' stroke='#e2e8f0' stroke-width='.35'/>
+<circle cx='2.2' cy='3.4' r='.55' fill='#f87171'><animate attributeName='opacity' values='1;0;0;1' dur='1.6' repeatDur='indefinite'/></circle>
+</g>
+</g>
+<g>
+<animateMotion path='M1700 920L-120 760' dur='307' begin='-287' keyPoints='0;1;1' keyTimes='0;.4;1' calcMode='linear' repeatDur='indefinite'/>
+<g transform='scale(1.6)'>
+<g>
+<animateTransform attributeName='transform' type='rotate' from='0' to='-360' dur='70' repeatDur='indefinite' additive='sum'/>
+<rect x='-3.2' y='-24' width='6.4' height='9.5' rx='.4' fill='url(#vPanel)' stroke='#cbd5e1' stroke-width='.3'/>
+<rect x='-3.2' y='14.5' width='6.4' height='9.5' rx='.4' fill='url(#vPanel)' stroke='#cbd5e1' stroke-width='.3'/>
+<path d='M-3.2-19.25h6.4M-3.2 19.25h6.4M0-24v9.5M0 14.5v9.5' stroke='#0b1a45' stroke-width='.3'/>
+<path d='M0-12.3v-2.2M0 12.3v2.2' stroke='#9aa5b4' stroke-width='.7'/>
+<path d='M-11 0H11M0-11V11' stroke='#8b96a6' stroke-width='.9'/>
+<circle r='11' fill='none' stroke='#7c8899' stroke-width='2.6'/>
+<circle r='11' fill='none' stroke='#4b5563' stroke-width='2.6' stroke-dasharray='1.2 3.4'/>
+<circle cx='11' r='.7' fill='#86efac'><animate attributeName='opacity' values='1;0;0;1' dur='2.2' begin='.6' repeatDur='indefinite'/></circle>
+</g>
+<path d='M-8.5-7A11 11 0 0 1 7-8.5' fill='none' stroke='#f1f5f9' stroke-width='1.1' stroke-linecap='round' opacity='.85'/>
+<path d='M8.5 7A11 11 0 0 1-7 8.5' fill='none' stroke='#1f2937' stroke-width='1.1' stroke-linecap='round' opacity='.6'/>
+<circle r='3' fill='url(#vBall)'/>
+</g>
+</g>
+<g>
+<animateMotion path='M-80 830C420 720 900 650 1700 390' dur='151' begin='-116' keyPoints='0;1;1' keyTimes='0;.16;1' calcMode='linear' repeatDur='indefinite' rotate='auto'/>
+<g transform='scale(1.8)'>
+<g transform='translate(-13.4 0)'>
+<g>
+<animateTransform attributeName='transform' type='scale' values='1 1;1.3 .92;.9 1;1.2 1.04;1 1' dur='.35' repeatDur='indefinite' additive='sum'/>
+<path d='M0-1.7C-3-1.7-7-.9-11 0-7 .9-3 1.7 0 1.7z' fill='url(#vFlame)'/>
+<path d='M0-.8C-1.5-.8-3.5-.4-5 0-3.5.4-1.5.8 0 .8z' fill='#fffbeb'/>
+</g>
+</g>
+<path d='M-12.2-1.9l-1.4-.5v2.2l1.4.4zM-12.2.8l-1.4-.2v2.2l1.4-.4z' fill='#374151'/>
+<path d='M-11.8-2.4l-1.6-5h3.2l5 5z' fill='url(#vWing)'/>
+<path d='M-12-2.4h16.5c4.2 0 7.6 1.2 9.6 2.4-2 1.2-5.4 2.4-9.6 2.4H-12z' fill='url(#vHull)'/>
+<path d='M-12 1.2h17.4c3.6 0 6.4-.5 8.6-1.2.8.4 1.2.6 1.1.8-2 1-5.4 1.6-9.6 1.6H-12z' fill='#1f2937'/>
+<path d='M-9.5 1.4h11.5l-7.2 4.8h-4.4z' fill='url(#vWing)'/>
+<path d='M-9.5 1.4h11.5l-1 .7h-10.5z' fill='#1f2937' opacity='.7'/>
+<path d='M11.6-1.9c1.8.5 2.9 1.1 3.5 1.9-.6.8-1.7 1.4-3.5 1.9z' fill='#1f2937'/>
+<path d='M8.4-1.5l1.3.25v.7l-1.3-.1zM10-1.2l1.1.3v.6l-1.1-.15z' fill='#0b1220'/>
+<path d='M-10-2.1h15.5' stroke='#fff' stroke-width='.35' opacity='.8'/>
+</g>
+</g>
+<!-- the roadster and its suited driver, tumbling slowly -->
+<g>
+<animateMotion path='M-120 520C450 430 1100 580 1720 470' dur='479' begin='-419' keyPoints='0;1;1' keyTimes='0;.115;1' calcMode='linear' repeatDur='indefinite'/>
+<g transform='scale(2.6)'>
+<animateTransform attributeName='transform' type='rotate' from='0' to='360' dur='151' repeatDur='indefinite' additive='sum'/>
+<path d='M-19.5 1.4v-3.1c0-1 .9-1.7 2.4-1.8l10.6-.5 1.6.8h7l2.2-.8 9 1.1c3.4.4 5.6 1.3 6.2 2.8v1.5z' fill='url(#vRed)'/>
+<path d='M-19.5 .6h39v.8h-39z' fill='#991b1b'/>
+<path d='M-17.6-2.6l11.3-.5M5.6-3.1l8.8 1.1' fill='none' stroke='#fecaca' stroke-width='.4' opacity='.7'/>
+<path d='M-2.9-2.6l.6-3h3l.5 3z' fill='#f1f5f9'/>
+<circle cx='-.8' cy='-7.3' r='2' fill='#f8fafc'/>
+<path d='M-.5-8.5a1.6 1.5 0 0 1 2.4 1.3h-2.5z' fill='#1e293b'/>
+<path d='M.6-4.8l2.6 1.6' stroke='#f8fafc' stroke-width='.9' stroke-linecap='round'/>
+<path d='M5.3-3.4l-1.9-2.8' stroke='#bae6fd' stroke-width='.7' stroke-linecap='round' opacity='.85'/>
+<ellipse cx='19.2' cy='-.6' rx='.7' ry='.45' fill='#fde68a'/>
+<path d='M-19.6-1.9h.8v1.1h-.8z' fill='#fca5a5'/>
+<circle cx='-12.5' cy='1.5' r='2.7' fill='#0b0f19'/>
+<circle cx='12.5' cy='1.5' r='2.7' fill='#0b0f19'/>
+<circle cx='-12.5' cy='1.5' r='1.2' fill='url(#vBall)'/>
+<circle cx='12.5' cy='1.5' r='1.2' fill='url(#vBall)'/>
+</g>
+</g>
+</svg>

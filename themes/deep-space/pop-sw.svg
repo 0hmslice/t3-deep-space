@@ -1,0 +1,115 @@
+<!-- Star Wars / Star Trek visitors. First appearance after a load (cycle):
+     Millennium Falcon 125s (613s), X-wing chased by a TIE fighter 185s (727s; one pass in three, starting with the first, ends in a hit), Enterprise 245s (673s),
+     Klingon Bird-of-Prey 310s (839s, decloaks on arrival and cloaks before leaving) -->
+<defs>
+<radialGradient id='swG' fx='.35' fy='.3'><stop stop-color='#f1f5f9'/><stop offset='.6' stop-color='#a3acb9'/><stop offset='1' stop-color='#4b5563'/></radialGradient>
+<linearGradient id='swK' x2='0' y2='1'><stop stop-color='#7ea88a'/><stop offset='.5' stop-color='#3f6b4f'/><stop offset='1' stop-color='#1c3326'/></linearGradient>
+<linearGradient id='swD' x2='0' y2='1'><stop stop-color='#64748b'/><stop offset='1' stop-color='#1e293b'/></linearGradient>
+<radialGradient id='fxB'><stop stop-color='#fff'/><stop offset='.25' stop-color='#fef3c7'/><stop offset='.55' stop-color='#f97316' stop-opacity='.85'/><stop offset='1' stop-color='#f9731600'/></radialGradient>
+<linearGradient id='fxR' x2='1' y2='1'><stop stop-color='#dde'/><stop offset='1' stop-color='#456'/></linearGradient>
+<radialGradient id='fxH' fx='.24' fy='.22'><stop stop-color='#eee'/><stop offset='.55' stop-color='#ccd'/><stop offset='1' stop-color='#678'/></radialGradient>
+<radialGradient id='fxG' cx='.6' r='.5'><stop stop-color='#7dfc'/><stop offset='.45' stop-color='#3bf5'/><stop offset='1' stop-color='#08c0'/></radialGradient>
+<path id='fxE' d='M-19.3-9.6A16 16 0 0 0-19.3 9.6'/>
+<path id='fxV' d='M-17.4-2.7h0m1.2-3h0m2-2.4h0m-3.2 10.8h0m1.2 3h0m2 2.4h0'/>
+</defs>
+<!-- Millennium Falcon (Gemini), from above, nose +x -->
+<g>
+<animateMotion path='M-120 300C400 360 1000 250 1720 330' dur='613' begin='-488' keyPoints='0;1;1' keyTimes='0;.037;1' calcMode='linear' repeatDur='indefinite' rotate='auto'/>
+<g transform='scale(2.85)' stroke-width='.24'>
+<ellipse cx='-22.2' rx='7' ry='13' fill='url(#fxG)'/>
+<g fill='none' stroke-linecap='round' stroke-width='1.1'><use href='#fxE' stroke='#3bfb' stroke-width='2.1'/><use href='#fxE' stroke='#eff'><animate attributeName='opacity' values='.8;1;.85;1;.75' dur='.65' repeatDur='indefinite'/></use><use href='#fxE' stroke='#0479' stroke-dasharray='.4 1.2'/></g>
+<g stroke='#234'><path d='M.4 14.3L9.6 17.2v-3.7L4.4 11.7zM9.4 13.4h4.4l4.4 1q.9.9 0 1.8l-4.4 1H9.4z' fill='url(#vHull)'/><path d='M-9.4-15.4l1.2-2h3.4l1.2 2zM-9.4 15.4l1.2 2h3.4l1.2-2zM4.2-11.9L23.2-5v3.4L8.2-1.4v2.8l15 .2V5L4.2 11.9A16 16 0 1 1 4.2-11.9z' fill='url(#fxR)'/></g>
+<path d='M14.5 13.9l3.6.7q.8.7 0 1.4l-3.6.7q.7-1.4 0-2.8z' fill='url(#swD)'/>
+<path d='M3.2-10.1L22.2-4.4v2.3l-13.6-.2v4.6l13.6-.2v2.3L3.2 10.1A14 14 0 1 1 3.2-10.1z' fill='url(#fxH)'/>
+<path d='M-13-11l4-1.5.7 2.5-3.4 1.5zM-17.5-5l3.4-2 1.4 2-3.2 2zM-2.5 8l4-.5-.4 3.4-4 .3z' fill='#eefa'/>
+<path d='M-15 6l4-2 1.4 2.5-3.8 2zM-10 10l4-.4.3 3-4 .4zM-14-2h3.6v2H-14zM4-4h4v1.8H4zM-3.4-12.5l4 .9-.8 2.8-3.6-.8z' fill='#789a'/>
+<path d='M-11-6.5l3.4-1.3.7 2.4-3.2 1.1zM-2 4l4-.5.7 3-4.5.7z' fill='#ba97'/>
+<path d='M-12.4-11.3l2.8-1 .6 1.5-2.7 1zM13.6-6.7l3 .9-.3.9-3-.9zM16 5l3.2-1 .3.9-3.2 1zM-14 9.4l2.8 1.9-.9 1.1-2.8-1.9z' fill='#944c'/>
+<path d='M-8-15.4h3l.5 15.4-.5 15.4h-3L-8.5 0z' fill='url(#fxR)' stroke='#456'/>
+<path d='M-7.9-17.4h2.8v.7h-2.8zm0 34.1h2.8v.7h-2.8zM6.6-2.1h2.4l-.9.8v2.6l.9.8H6.6z' fill='#123'/>
+<path d='M10.5-5h2.8v1.6h-2.8zm0 8.4h2.8V5h-2.8zM16-4.3h2v1.2h-2zm0 7.4h2v1.2h-2z' fill='#123' stroke='#567'/>
+<g fill='none'>
+<path d='M-19.4-5.4A14 14 0 0 1 2.2-10.8' stroke='#fff7' stroke-width='.4'/>
+<path d='M-16.4-9.9L3.4 9.9M-16.4 9.9L3.4-9.9M-19.5-5L-6.5 0l-13 5M-20.5 0h14M-2-13l-4.5 13 4.5 13M-2-1.8h8.5v3.6H-2M2-1.8v3.6M9.6-7.8v5.5m0 4.6v5.5M15-6.2v4m0 4.4v4M19-5v2.8m0 4.4V5M3.2-10.1A14 14 0 1 0 3.2 10.1M3.2 12.6l-.8 2.3m3-1.9-.8 2.9m3-2.7-.6 3.4m3.6-3.2v3.8m3.2-3.8v3.8M8.4-1.7L23-1.9M8.4 1.7L23 1.9' stroke='#345b'/>
+<path d='M11-4.2h1.6m3.8.5h1.2M11 4.2h1.6m3.8-.5h1.2M7.2-.9v1.8M14.7 15.3h3.7m-3.2-1.1 2.8.7m-2.8 1.5 2.8-.7m-1.5-1.4q.5 1 0 2' stroke='#9ab'/>
+<g stroke-linecap='round'><path d='M22.5-3.3h.4m-.4 6.6h.4M15.6 14.5l1.6.3' stroke='#dffd' stroke-width='.45'/><use href='#fxV' stroke='#678' stroke-width='2.8'/><use href='#fxV' stroke='#123' stroke-width='2.1'/><use href='#fxV' stroke='#345' stroke-width='.9'/></g>
+</g>
+<g transform='translate(-6.5)'><circle cx='.4' cy='.4' r='4.6' fill='#1236'/><circle r='4.6' fill='url(#fxH)' stroke='#456'/><path d='M0-4.6v9.2M-4.6 0h9.2M-3.2-3.2l6.4 6.4m0-6.4-6.4 6.4' stroke='#456b'/><circle r='2.4' fill='url(#vBall)' stroke='#345'/><circle r='1.3' fill='#123' stroke='#9ab'/><path d='M-1.3 0h2.6M0-1.3v2.6' stroke='#678'/><path d='M1.8-.3h4m-4 1.2h4' stroke='#1236' stroke-width='.4'/><path d='M1.7-.7h4m-4 .4h4m-4 .6h4m-4 .4h4' stroke='#345'/></g>
+<g transform='translate(1.6 -7.3) rotate(-32)'><ellipse cx='.2' cy='.9' rx='2.7' ry='2' fill='#1236'/><path d='M-.9 1.1L0 0' stroke='#456' stroke-width='.8'/><ellipse rx='2.7' ry='2' fill='url(#vBall)' stroke='#eef'/><path d='M-1.5 0a1.5 1.1 0 1 0 3 0 1.5 1.1 0 1 0-3 0M-2-.8L0 0l2-.7M0 0l.1 1.6' fill='none' stroke='#567b'/><circle r='.4' fill='#123'/></g>
+</g>
+</g>
+<!-- X-wing chased by a TIE fighter on the same path -->
+<g>
+<animateMotion path='M1720 760C1150 690 600 820 -150 700' dur='727' begin='-542' keyPoints='0;1;1' keyTimes='0;.026;1' calcMode='linear' repeatDur='indefinite' rotate='auto'/>
+<g transform='scale(1.7)'>
+<animateTransform attributeName='transform' type='rotate' values='0;0;-16;9;0;0' keyTimes='0;.00413;.00425;.0044;.00465;1' dur='2181' begin='185' repeatDur='indefinite' additive='sum'/>
+<path d='M-10.5-3.6h-3M-10.5 3.6h-3' stroke='#fb923c' stroke-width='1.4' stroke-linecap='round'>
+<animate attributeName='opacity' values='.6;1;.6' dur='.3' repeatDur='indefinite'/>
+</path>
+<path d='M-7-1.3L-3-1.3-1.6-10H-5.8zM-7 1.3L-3 1.3-1.6 10H-5.8z' fill='url(#vWing)'/>
+<path d='M-4.6-6.6h2.3l-.3 1.4h-2.2zM-4.6 6.6h2.3l-.3-1.4h-2.2z' fill='#dc2626'/>
+<path d='M-5.8-10H10M-5.8 10H10' stroke='#cbd5e1' stroke-width='.5'/>
+<path d='M-10.5-4.6h5v2h-5zM-10.5 2.6h5v2h-5z' fill='#94a3b8'/>
+<path d='M-9-1.5L12-.7 16.5 0 12 .7-9 1.5z' fill='url(#vHull)'/>
+<path d='M2.5-.6L6.5-.4V.4L2.5.6z' fill='#0f172a'/>
+<path d='M-2-1.3h2.4v2.6H-2z' fill='#dc2626'/>
+<circle cx='1.3' r='.95' fill='#f1f5f9' stroke='#94a3b8' stroke-width='.15'/>
+<path d='M1.3-.95A.95.95 0 0 1 2.25 0H1.3z' fill='#2563eb'/>
+<circle cx='1.1' cy='.35' r='.22' fill='#1e3a8a'/>
+</g>
+<g opacity='0'>
+<animate attributeName='opacity' values='0;0;1;.7;0;0' keyTimes='0;.00413;.0042;.0045;.00478;1' dur='2181' begin='185' repeatDur='indefinite'/>
+<circle cx='-14' r='16' fill='url(#fxB)'/>
+<path d='M-14 0l13-7M-14 0l11 9M-14 0l-3 13M-14 0l-12-6M-14 0l2-14' stroke='#fde68a' stroke-width='1.2' stroke-linecap='round'/>
+</g>
+</g>
+<g>
+<animateMotion path='M1720 760C1150 690 600 820 -150 700' dur='727' begin='-539.4' keyPoints='0;1;1' keyTimes='0;.026;1' calcMode='linear' repeatDur='indefinite'/>
+<path d='M-26 0h-16' stroke='#4ade80' stroke-width='1.8' stroke-linecap='round'>
+<animate attributeName='opacity' values='1;1;0' keyTimes='0;.8;1' dur='.8' repeatDur='indefinite'/>
+<animateTransform attributeName='transform' type='translate' values='0 -3;-250 -3' dur='.8' repeatDur='indefinite'/>
+</path>
+<path d='M-26 0h-16' stroke='#86efac' stroke-width='1.8' stroke-linecap='round'>
+<animate attributeName='opacity' values='1;1;0' keyTimes='0;.8;1' dur='.8' begin='.4' repeatDur='indefinite'/>
+<animateTransform attributeName='transform' type='translate' values='0 3;-250 3' dur='.8' begin='.4' repeatDur='indefinite'/>
+</path>
+<g transform='scale(1.6)'>
+<path d='M-12-1.1H12V1.1H-12z' fill='#64748b'/>
+<path d='M-13.8-13.5H-10.2L-8.6 0-10.2 13.5H-13.8L-15.4 0zM13.8-13.5H10.2L8.6 0 10.2 13.5H13.8L15.4 0z' fill='url(#swD)' stroke='#a3acb9' stroke-width='.5'/>
+<path d='M-12-13.5V13.5M-15.4 0H-8.6M12-13.5V13.5M15.4 0H8.6' stroke='#a3acb9' stroke-width='.35' opacity='.8'/>
+<circle r='5' fill='url(#swG)'/>
+<circle r='2.6' fill='#0f172a' stroke='#a3acb9' stroke-width='.4'/>
+<path d='M0-2.6V2.6M-2.6 0H2.6M-1.8-1.8l3.6 3.6M1.8-1.8l-3.6 3.6' stroke='#64748b' stroke-width='.3'/>
+</g>
+</g>
+<!-- USS Enterprise, side view, nose +x -->
+<g>
+<animateMotion path='M-160 600C450 560 1100 620 1760 540' dur='673' begin='-428' keyPoints='0;1;1' keyTimes='0;.068;1' calcMode='linear' repeatDur='indefinite'/>
+<g transform='scale(2.1)'>
+<path d='M-8 2.4L-11.5-4.6H-10L-5.6 2.4z' fill='#9aa5b4'/>
+<rect x='-23' y='-7.4' width='14.5' height='2.8' rx='1.4' fill='url(#vHull)'/>
+<path d='M-22.5-5.2h13' stroke='#60a5fa' stroke-width='.6' opacity='.9'/>
+<circle cx='-9' cy='-6' r='1.3' fill='#ef4444'>
+<animate attributeName='opacity' values='.6;1;.6' dur='2.4' repeatDur='indefinite'/>
+</circle>
+<path d='M-12 2.4H4C6 2.4 7.2 3.3 7.2 4.4S6 6.4 4 6.4H-12z' fill='url(#vHull)'/>
+<circle cx='6.6' cy='4.4' r='1.1' fill='#fbbf24'/>
+<path d='M-1-2H2.6L1 2.4H-2.6z' fill='#cbd5e1'/>
+<ellipse cx='5' cy='-3.4' rx='11.5' ry='2.3' fill='url(#vHull)'/>
+<ellipse cx='5' cy='-5.5' rx='2.4' ry='1' fill='#e2e8f0'/>
+<path d='M-6-3h22' stroke='#7c8899' stroke-width='.3'/>
+</g>
+</g>
+<!-- Klingon Bird-of-Prey, from above, nose +x; decloaks on arrival, cloaks before leaving -->
+<g opacity='0'>
+<animateMotion path='M1720 180C1150 250 550 130 -150 210' dur='839' begin='-529' keyPoints='0;1;1' keyTimes='0;.036;1' calcMode='linear' repeatDur='indefinite' rotate='auto'/>
+<animate attributeName='opacity' values='0;.2;1;1;.15;0;0' keyTimes='0;.002;.005;.031;.034;.036;1' dur='839' begin='-529' repeatDur='indefinite'/>
+<g transform='scale(1.9)'>
+<ellipse cx='-6.5' rx='1.6' ry='1.2' fill='#ef4444' opacity='.8'/>
+<path d='M2-1.2L-6-2.2-11-14H-7.2L.4-6.5zM2 1.2L-6 2.2-11 14H-7.2L.4 6.5z' fill='url(#swK)'/>
+<path d='M-10.6-14l1 2.5M-10.6 14l1-2.5' stroke='#a3e635' stroke-width='.8'/>
+<path d='M-6-1.6L8-.9V.9L-6 1.6z' fill='url(#swK)'/>
+<path d='M8-1.4L14.5-1.8 16.5 0 14.5 1.8 8 1.4z' fill='#5d8a6b'/>
+<path d='M13.5-.7l1.6.7-1.6.7z' fill='#fca5a5'/>
+</g>
+</g>
