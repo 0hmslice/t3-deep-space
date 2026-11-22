@@ -24,7 +24,22 @@ It's all CSS and SVG, with no JavaScript, and it stays behind a readability veil
 
 You need **T3 Code Nightly from 2026-11-21 or later**. Older builds have a smaller theme size limit.
 
-**macOS and Linux:**
+**Ask your agent.** In any T3 Code thread, send:
+
+```text
+Install the Deep Space theme from https://github.com/0hmslice/t3-deep-space and switch to it
+```
+
+The agent follows [`AGENTS.md`](AGENTS.md): it finds your themes folder, installs both files and switches T3 to Deep Space.
+
+**Or run it yourself** (macOS and Linux):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/install.sh | sh
+```
+
+<details>
+<summary>Without the script</summary>
 
 ```sh
 repo=https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/themes
@@ -32,18 +47,17 @@ mkdir -p ~/.t3/userdata/themes && cd ~/.t3/userdata/themes
 curl -fsSLO $repo/deep-space.json -O $repo/deep-space.webp
 ```
 
-Then pick **Deep Space** in T3 Code's theme settings. If it was already selected, switch to another theme and back to load the new version.
-
-<details>
-<summary>Manual install</summary>
+Or by hand:
 
 1. Download [`themes/deep-space.json`](themes/deep-space.json) and [`themes/deep-space.webp`](themes/deep-space.webp).
 2. Put both in `~/.t3/userdata/themes/`.
 3. Pick **Deep Space** in T3 Code's theme settings.
 
-You can also drop `deep-space.json` onto **Add theme** in T3 Code. The `.webp` is the starfield behind the scene, and T3 loads it from the themes folder when it has the same base name as the theme file. Without it, the theme still works over a plain gradient sky.
+You can also drop `deep-space.json` onto **Add theme** in T3 Code. The `.webp` is the starfield behind the scene, and T3 loads it from the themes folder when it's named after the theme's id, `deep-space.webp`. Without it, the theme still works over a plain gradient sky.
 
 </details>
+
+Then pick **Deep Space** in T3 Code's theme settings. If it was already selected, switch to another theme and back to load the new version.
 
 ## The sky
 
