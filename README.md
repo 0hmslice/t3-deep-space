@@ -14,7 +14,7 @@ It's all CSS and SVG, with no JavaScript, and it stays behind a readability veil
 [![No JavaScript](https://img.shields.io/badge/JavaScript-none-fbbf24?style=flat-square&labelColor=05060f)](#how-it-fits-in-one-css-file)
 [![License: MIT](https://img.shields.io/badge/license-MIT-34d399?style=flat-square&labelColor=05060f)](LICENSE)
 
-[Install](#install) · [The sky](#the-sky) · [The visitors](#the-visitors) · [The app](#the-app) · [Build from source](#build-from-source)
+[Install](#install) · [The sky](#the-sky) · [The visitors](#the-visitors) · [The app](#the-app) · [Performance](#performance) · [Build from source](#build-from-source)
 
 <img src="docs/tour.webp" alt="The Deep Space scene: spinning planets, a ringed gas giant, a spiral galaxy, Rick's portal and the Tesla Roadster" width="100%">
 
@@ -108,6 +108,12 @@ Every visitor runs on its own **prime-length cycle**, from 151 to 839 seconds. T
 - **Every colour role.** All 60 of T3's colour roles are set: sidebar, toolbar, terminal, code blocks, search highlights, focus ring, and the error, warning and update surfaces.
 - **Built for reading.** A soft veil sits behind text and Markdown gets its own typography. Settings and terminal panels become glass cards, and the composer and its checkout strip read as one piece.
 - **Reduced motion.** With your system's *reduce motion* setting on, every theme animation stops and the app's own transitions are left alone.
+
+## Performance
+
+A background that never stops moving isn't free. On a Linux desktop (RTX 4070), with the window on screen and an agent working, T3 Code used about **0.6 of a CPU core** with Deep Space and about 0.1 with the stock theme.
+
+To switch the motion off, turn on your system's *reduce motion* setting. The planets and ships go away, and the starfield, colours and typography stay.
 
 ## Build from source
 

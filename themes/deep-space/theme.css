@@ -145,7 +145,7 @@
   border-radius:6px;
   padding-left:12px;
   margin-left:-12px;
-  animation:ds-beam 1.6s ease-in-out infinite;
+  animation:ds-beam 1.6s steps(6) infinite;
 }
 
 [data-user-message-bubble] {
@@ -321,15 +321,15 @@ svg.lucide {
 }
 
 .dark [data-chat-column]:has([data-timeline-row-kind="thinking"]) {
-  animation:ds-breath 4.5s ease-in-out infinite;
+  animation:ds-breath 4.5s steps(12) infinite;
 }
 
 .dark [data-chat-column]:has([data-timeline-row-kind="work-live"]) {
-  animation:ds-pulsar 1.6s ease-out infinite;
+  animation:ds-pulsar 1.6s steps(4) infinite;
 }
 
 .dark [data-chat-column]:has([data-timeline-row-kind="thinking"]):has([data-timeline-row-kind="work-live"]) {
-  animation:ds-breath 4.5s ease-in-out infinite,ds-pulsar 1.6s ease-out infinite;
+  animation:ds-breath 4.5s steps(12) infinite,ds-pulsar 1.6s steps(4) infinite;
 }
 
 [data-chat-composer-form]:focus-within:not(:has(.composer-tiptap>p:only-child>br.ProseMirror-trailingBreak:only-child,.absolute.text-placeholder)) [data-slot="composer-host"]::after {
@@ -449,7 +449,7 @@ body:has([data-pending-user-input-toggle]) [data-slot="composer-shell"] {
 
 .dark [data-slot="sidebar-inner"]::after {
   --ds-ox:100%;
-  background:var(--ds-orb),var(--ds-twinkle) no-repeat 0 0/100% 100%;
+  background:var(--ds-orb);   /* no twinkle here: an animated image in the sidebar costs ~0.4 CPU core in T3 (the header one is free) */
   mask:var(--ds-cut),linear-gradient(#000 0 57%,transparent 95%);
   mask-composite:intersect;
 }
