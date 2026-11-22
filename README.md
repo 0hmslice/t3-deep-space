@@ -27,10 +27,9 @@ You need **T3 Code Nightly from 2026-11-21 or later**. Older builds have a small
 **macOS and Linux:**
 
 ```sh
+repo=https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/themes
 mkdir -p ~/.t3/userdata/themes && cd ~/.t3/userdata/themes
-for f in json webp; do
-  curl -fsSLO https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/themes/deep-space.$f
-done
+curl -fsSLO $repo/deep-space.json -O $repo/deep-space.webp
 ```
 
 Then pick **Deep Space** in T3 Code's theme settings. If it was already selected, switch to another theme and back to load the new version.
