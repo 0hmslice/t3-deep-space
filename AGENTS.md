@@ -20,11 +20,11 @@ curl -fsSL https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/install
 T3_THEMES_DIR="<themesDir>" sh install.sh
 ```
 
-You can leave out `T3_THEMES_DIR` when the folder is `~/.t3/userdata/themes`. If you can't run shell commands, download both files from `https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/themes/` into the themes folder yourself.
+You can leave out `T3_THEMES_DIR` when the folder is `~/.t3/userdata/themes`. If a different `deep-space.json` or `.webp` is already there, the script keeps it as `<file>.previous`, so local edits aren't lost. If you can't run shell commands, download both files from `https://raw.githubusercontent.com/0hmslice/t3-deep-space/main/themes/` into the themes folder yourself.
 
 ## 3. Switch to it
 
-- **If you have `t3_theme_set`:** call it with `themeId: "t3-chat"`, then with `themeId: "deep-space"`. Switching away first makes T3 re-read the file if Deep Space was already selected. Don't pass a `theme` object, because that would replace the installed file.
+- **If you have `t3_theme_set`:** call it with `themeId: "t3-chat"`, then with `themeId: "deep-space"`. Switching away first makes T3 re-read the file if Deep Space was already selected. Don't pass a `theme` object, because that would replace the installed file. Each call returns `"published": false`, which is expected: it means the call only switched themes and didn't publish anything.
 - **Otherwise:** tell the user to pick **Deep Space** in T3 Code's theme settings.
 
 ## 4. Check
@@ -35,5 +35,5 @@ Tell the user that visitors arrive on a schedule. The first ship appears within 
 
 ## Requirements
 
-- **T3 Code Nightly from 2026-11-21 or later.** The theme's CSS is about 93,000 characters and T3's limit is 100,000. Older builds may reject it or leave out the animated scene; if so, ask the user to update.
+- **T3 Code Nightly `0.1.12-nightly.20261121` or later.** The date at the end of the version string is the build date. The theme's CSS is about 93,000 characters and T3's limit is 100,000. Older builds may reject it or leave out the animated scene; if so, ask the user to update.
 - You don't need to build anything. The files in `themes/` are ready to use, and "Build from source" in the README is only for editing the theme.

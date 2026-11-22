@@ -17,6 +17,10 @@ for f in deep-space.json deep-space.webp; do
   else
     curl -fsSL "$RAW/$f" -o "$DEST/$f.tmp"
   fi
+  if [ -f "$DEST/$f" ] && ! cmp -s "$DEST/$f.tmp" "$DEST/$f"; then
+    cp "$DEST/$f" "$DEST/$f.previous"   # keep the old copy, in case it had local edits
+    echo "Saved your previous $f as $f.previous"
+  fi
   mv "$DEST/$f.tmp" "$DEST/$f"
 done
 
@@ -24,4 +28,5 @@ done
 grep -q '"name": "Deep Space"' "$DEST/deep-space.json" || { echo "deep-space.json looks wrong" >&2; exit 1; }
 
 echo "Installed Deep Space to $DEST"
-echo "Now select Deep Space in T3 Code's theme settings (switch away and back if it was already selected)."
+echo "Next: select Deep Space in T3 Code's theme settings, or have your agent call t3_theme_set."
+echo "If it was already selected, switch to another theme and back to load the new version."

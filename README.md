@@ -22,7 +22,7 @@ It's all CSS and SVG, with no JavaScript, and it stays behind a readability veil
 
 ## Install
 
-You need **T3 Code Nightly from 2026-11-21 or later**. Older builds have a smaller theme size limit.
+You need **T3 Code Nightly `0.1.12-nightly.20261121` or later**. Older builds have a smaller theme size limit.
 
 **Ask your agent.** In any T3 Code thread, send:
 
